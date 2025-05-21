@@ -67,9 +67,9 @@ const sessionOptions = {
 };
 
 //root route
-// app.get("/" , (req,res) =>{
-//     res.send("Working fine ");
-// })
+app.get("/" , (req,res) =>{
+    res.redirect("/listings");
+})
 
 app.use(session(sessionOptions));
 app.use(flash());
